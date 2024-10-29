@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overdue Tasks</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        .overdue { color: red; }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <h1>Get your work done!</h1>
+        <p>add your tasks here ...</p>
+    </div>
+
+    <div class="container">
+        <h1>Overdue Tasks</h1>
+        <ul id="overdueList"></ul>
+        <br>
+       
+        <div class="sidenav">
+            <h2>Task Manager</h2>
+            <a href="viewTasks.html"><i class="fa-sharp fa-regular fa-eye"></i>&nbsp; View Tasks </a>
+            <a href="index.html"> <i class="fa-regular fa-pen-to-square"></i>&nbsp; Add Task  </a>
+            <a href="completedtasks.html"><i class="fa-solid fa-check"></i> &nbsp; Completed Tasks</a>
+            <a href="overduetask.html"><i class="fa-regular fa-clock"></i> &nbsp; Overdue Tasks</a>
+            <a href="searchtasks.html"><i class="fa-solid fa-magnifying-glass"></i> &nbsp; Search Tasks</a>
+        </div> 
+
+    </div>
+
+    <script src="script.js">
+       /* function loadTasks() {
+            return JSON.parse(localStorage.getItem("tasks") || "[]");
+        }
+
+        function renderOverdueTasks() {
+            const tasks = loadTasks();
+            const overdueList = document.getElementById("overdueList");
+            overdueList.innerHTML = '';
+            const now = new Date();
+
+            tasks.filter(task => !task.completed && new Date(task.date) < now).forEach(task => {
+                const taskItem = document.createElement("li");
+                taskItem.className = "overdue";
+                //taskItem.textContent = ${task.name} (Due: ${task.date});
+                overdueList.appendChild(taskItem);
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", renderOverdueTasks);
+    */</script>
+</body>
+</html>

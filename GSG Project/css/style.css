@@ -1,0 +1,244 @@
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0%;
+    height: 100vh;
+    background-image: url(../backimg.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.container {
+    width: 600px;
+   
+    margin-top: 20px;
+    margin-left: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+    align-content: center;
+}
+button {
+    padding: 10px;
+    background-color: rgba(160, 7, 91, 0.573);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    color: white;
+}
+.task {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.overdue {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(160, 7, 91, 0.573);
+    padding-top: 20px;
+    text-align: center;
+    box-shadow: 0 6px 10px rgba(85, 83, 83, 0.274)  ;
+  }
+  
+  .sidenav h2 {
+    color: white;
+    margin-bottom: 30px;
+  } 
+  
+  .sidenav a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 10px;
+  }
+  
+  .sidenav a:hover {
+    background-color: #575757;
+    color: white;
+    padding-left: 30px;
+    transition: 0.3s;
+  }
+  
+  .main-content {
+    text-align: center;
+  }
+  
+  .main-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .main-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+
+#list-container {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.task:hover {
+    transform: scale(1.02);
+}
+
+.task h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #c24d4d;
+}
+
+.task p {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+.task button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    font-size: 0.9rem;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task button:hover {
+    opacity: 0.85;
+}
+.task button:nth-child(1) { 
+    background-color: #28a745;
+}
+.task button:nth-child(2) {
+    background-color: #ffc107;
+    color: black;
+}
+.task button:nth-child(3) { 
+    background-color: #dc3545;
+}
+.task.completed h3, .task.completed p {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+.sidenav {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.sidenav h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.sidenav a {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, padding-left 0.3s;
+}
+.sidenav a:hover {
+    padding-left: 20px;
+    background-color: #a44949;
+}
+
+li
+{
+    background-color: #ebeced;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    list-style-type:none ;
+}
+
+li:hover
+{
+    transform: scale(1.02);
+}
+.duedate{
+    background-color: rgb(248, 220, 220);
+}
+
+.searchtasks h1 {
+    /* margin-bottom: 10px; */
+    text-align: center;
+}
+
+.taskform {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.containersearch{
+    width: 600px;
+    height: 150px ;
+    margin-top: 20px;
+    margin-left: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 20px;
+}
+#searchResults{
+    list-style-type: none;
+    padding: 0;
+}
